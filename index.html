@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link href =  "styles.css" rel = "stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class = "container" >
+            
+            <div class = "circle_container">
+                <div class= "circle">
+                    <button id = "close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id = "open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h1><strong>Moore Savory Foods </strong>You came to the right place</h1>
+                    <a href="#">View our menu </a>
+                </div>
+                <div class="image">
+                    <img  width = "700" src="./louis-hansel-MlPD-AzZYMg-unsplash.jpg">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><i class="fas fa-home"></i>Home</li>
+                <li><i class="fas fa-user-alt"></i>about</li>
+                <li><i class="fas fa-comment"></i>Testimonials</li>
+                <li><i class="fas fa-envelope"></i>Contact</li>
+            </ul>
+
+        </nav>
+          
+    </header>
+    <!--Special Items-->
+    <section class = "special_items">
+        <h1>Month Specials</h1>
+        <div class ="row">
+            <div class="item_box">
+                <div class="title_item">
+                    <h3>green fava</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consectetur</p>
+                    <strong>19$</strong>
+                </div>
+                <div class="img_item">
+                    <img src="./salmon-g224097ca8_640.jpg">
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="title_item">
+                    <h3>celery quand</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consectetur</p>
+                    <strong>22$</strong>
+                </div>
+                <div class="img_item">
+                    <img src="./salmon-g224097ca8_640.jpg">
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="title_item">
+                    <h3>pea horse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consectetur</p>
+                    <strong>15$</strong>
+                </div>
+                <div class="img_item">
+                    <img src="./salmon-g224097ca8_640.jpg">
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="img_item">
+                    <img src="./salmon-g224097ca8_640.jpg">
+                </div>
+                <div class="title_item">
+                    <h3>soko radicchio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consectetur</p>
+                    <strong>24$</strong>
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="img_item">
+                    <img src="./salmon-g224097ca8_640.jpg">
+                </div>
+                <div class="title_item">
+                    <h3>tigernut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consectetur</p>
+                    <strong>18$</strong>
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="img_item">
+                    <img src="./salmon-g224097ca8_640.jpg">
+                </div>
+                <div class="title_item">
+                    <h3>yarrow sweet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, consectetur</p>
+                    <strong>30$</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+       const open = document.getElementById('open')
+        const close = document.getElementById('close')
+        const container = document.querySelector('.container')
+
+        open.addEventListener('click', () => container.classList.add('show-nav'))
+        close.addEventListener('click', () => container.classList.remove('show-nav'))
+    </script>
+    
+</body>
+</html>
