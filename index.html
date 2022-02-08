@@ -25,11 +25,11 @@
             </div>
             <div class="content">
                 <div class="left">
-                    <h1><strong>Moore Savory Foods </strong>You came to the right place</h1>
+                    <h1><strong>Hungry? </strong>You came to the right place</h1>
                     <a href="#">View our menu </a>
                 </div>
                 <div class="image">
-                    <img  width = "700" src="./louis-hansel-MlPD-AzZYMg-unsplash.jpg">
+                    <img  width = "700" src="./Screenshot 2022-01-18 at 7.54.27 PM.png">
                 </div>
             </div>
         </div>
@@ -110,14 +110,33 @@
             </div>
         </div>
     </section>
+    <!-- About Me Section-->
+    <section class="about_me">
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="col-1">
+                <h2>A new style of food</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Molestias a doloremque minus 
+                    sit autem libero fugit! Nulla et voluptatibus ullam, cum, 
+                    maxime eius iste modi, odio laborum non vero nostrum!</p>
+                    <a href="#">View Menu</a>
+            </div>
+            <div class="col-2">
+                <img  class = "cat-mo" src="./Screenshot 2022-01-18 at 7.54.27 PM.png" alt="">
+            </div>
+        </div>
+    </section>
 
     <script>
        const open = document.getElementById('open')
         const close = document.getElementById('close')
         const container = document.querySelector('.container')
+        const spin = doc.getElementsByClassName('cat-mo')
 
         open.addEventListener('click', () => container.classList.add('show-nav'))
         close.addEventListener('click', () => container.classList.remove('show-nav'))
+        //spin.addEventListener('on-scroll'function(){spin} )
     </script>
     
 </body>
