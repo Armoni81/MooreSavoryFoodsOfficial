@@ -240,17 +240,18 @@ header .content{
     height:10%;
     opacity:0.7;
  }
- .cat-mo{
+ .animation1{
      height: 300px;
      width:350px;
      border-radius: 10px;
      
  }
- .cat-mo:hover{
+ .animation1:hover{
     animation-name: spin;
     animation-duration: 1000ms;
     animation-iteration-count: 1;
     animation-timing-function: linear; 
+    
  }
  @keyframes spin {
     from {
@@ -260,8 +261,17 @@ header .content{
         transform:rotate(360deg);
     }
 }
+#sizeup{
+    border-radius: 20px;
+}
+#sizeup:hover{
+    width:450px;
+    border-color: red
+    border-radius: 20px;
+    box-shadow: 10px 30px 40px 2px orange ;
+}
 
-  
+
  .about_me .row{
      display:flex;
      justify-content: space-between;

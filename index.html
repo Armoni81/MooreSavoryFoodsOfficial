@@ -15,10 +15,10 @@
             
             <div class = "circle_container">
                 <div class= "circle">
-                    <button id = "close">
+                    <button id = "close" onclick = handleClick(this)>
                         <i class="fas fa-times"></i>
                     </button>
-                    <button id = "open">
+                    <button id = "open" onclick = handleClick(this)>
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -55,7 +55,7 @@
                     <strong>19$</strong>
                 </div>
                 <div class="img_item">
-                    <img src="./salmon-g224097ca8_640.jpg">
+                    <img  id ="sizeup" src="./salmon-g224097ca8_640.jpg">
                 </div>
             </div>
             <div class="item_box">
@@ -65,7 +65,7 @@
                     <strong>22$</strong>
                 </div>
                 <div class="img_item">
-                    <img src="./salmon-g224097ca8_640.jpg">
+                    <img id ="sizeup"  onclick =sizeUp(this) src="./salmon-g224097ca8_640.jpg">
                 </div>
             </div>
             <div class="item_box">
@@ -75,12 +75,12 @@
                     <strong>15$</strong>
                 </div>
                 <div class="img_item">
-                    <img src="./salmon-g224097ca8_640.jpg">
+                    <img id ="sizeup" src="./salmon-g224097ca8_640.jpg">
                 </div>
             </div>
             <div class="item_box">
                 <div class="img_item">
-                    <img src="./salmon-g224097ca8_640.jpg">
+                    <img id ="sizeup" src="./salmon-g224097ca8_640.jpg">
                 </div>
                 <div class="title_item">
                     <h3>soko radicchio</h3>
@@ -90,7 +90,7 @@
             </div>
             <div class="item_box">
                 <div class="img_item">
-                    <img src="./salmon-g224097ca8_640.jpg">
+                    <img id ="sizeup" src="./salmon-g224097ca8_640.jpg">
                 </div>
                 <div class="title_item">
                     <h3>tigernut</h3>
@@ -100,7 +100,7 @@
             </div>
             <div class="item_box">
                 <div class="img_item">
-                    <img src="./salmon-g224097ca8_640.jpg">
+                    <img  id ="sizeup" src="./salmon-g224097ca8_640.jpg">
                 </div>
                 <div class="title_item">
                     <h3>yarrow sweet</h3>
@@ -123,20 +123,13 @@
                     <a href="#">View Menu</a>
             </div>
             <div class="col-2">
-                <img  class = "cat-mo" src="./Screenshot 2022-01-18 at 7.54.27 PM.png" alt="">
+                <img  id = "cat-mo"  src="./Screenshot 2022-01-18 at 7.54.27 PM.png" alt="">
             </div>
         </div>
     </section>
 
-    <script>
-       const open = document.getElementById('open')
-        const close = document.getElementById('close')
-        const container = document.querySelector('.container')
-        const spin = doc.getElementsByClassName('cat-mo')
-
-        open.addEventListener('click', () => container.classList.add('show-nav'))
-        close.addEventListener('click', () => container.classList.remove('show-nav'))
-        //spin.addEventListener('on-scroll'function(){spin} )
+    <script src= './scripts.js'>
+       
     </script>
     
 </body>
